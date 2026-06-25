@@ -1,0 +1,12 @@
+{
+  "name": "hackathon-root",
+  "version": "1.0.0",
+  "scripts": {
+    "start:frontend": "cd urban-dashboard && npm run dev",
+    "start:backend": "python app.py",
+    "dev": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
