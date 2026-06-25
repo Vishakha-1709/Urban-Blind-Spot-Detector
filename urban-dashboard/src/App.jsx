@@ -611,7 +611,7 @@ export default function App() {
       // --- Analyze Image A ---
       const formA = new FormData();
       formA.append("file", fileA);
-      const resA = await fetch("https://urban-blind-spot-detector.onrender.com/analyze", {
+      const resA = await fetch("disciplined-simplicity-production-e853.up.railway.app", {
         method: "POST",
         body: formA,
       });
@@ -624,7 +624,7 @@ export default function App() {
       if (fileB) {
         const formB = new FormData();
         formB.append("file", fileB);
-        const resB = await fetch("https://urban-blind-spot-detector.onrender.com/analyze", {
+        const resB = await fetch("disciplined-simplicity-production-e853.up.railway.app", {
           method: "POST",
           body: formB,
         });
