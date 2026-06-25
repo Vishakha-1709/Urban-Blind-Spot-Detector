@@ -635,7 +635,7 @@ export default function App() {
       }
     } catch (err) {
       console.error("Analysis failed:", err);
-      alert("Could not connect to backend at http://disciplined-simplicity-production-e853.up.railway.app/analyze\n\nMake sure your FastAPI server is running.");
+      alert("Could not connect to backend at https://disciplined-simplicity-production-e853.up.railway.app/analyze\n\nMake sure your FastAPI server is running.");
     } finally {
       setLoadingA(false);
       setLoadingB(false);
