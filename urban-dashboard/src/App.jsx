@@ -611,7 +611,7 @@ export default function App() {
       // --- Analyze Image A ---
       const formA = new FormData();
       formA.append("file", fileA);
-      const resA = await fetch("disciplined-simplicity-production-e853.up.railway.app", {
+      const resA = await fetch("https://disciplined-simplicity-production-e853.up.railway.app/analyze", {
         method: "POST",
         body: formA,
       });
@@ -624,7 +624,7 @@ export default function App() {
       if (fileB) {
         const formB = new FormData();
         formB.append("file", fileB);
-        const resB = await fetch("disciplined-simplicity-production-e853.up.railway.app", {
+        const resB = await fetch("https://disciplined-simplicity-production-e853.up.railway.app/analyze", {
           method: "POST",
           body: formB,
         });
