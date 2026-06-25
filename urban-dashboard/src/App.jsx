@@ -611,7 +611,7 @@ export default function App() {
       // --- Analyze Image A ---
       const formA = new FormData();
       formA.append("file", fileA);
-      const resA = await fetch("http://localhost:8000/analyze", {
+      const resA = await fetch("https://urban-blind-spot-detector.onrender.com/analyze", {
         method: "POST",
         body: formA,
       });
@@ -624,7 +624,7 @@ export default function App() {
       if (fileB) {
         const formB = new FormData();
         formB.append("file", fileB);
-        const resB = await fetch("http://localhost:8000/analyze", {
+        const resB = await fetch("https://urban-blind-spot-detector.onrender.com/analyze", {
           method: "POST",
           body: formB,
         });
